@@ -14,7 +14,7 @@ initMenu();
 const initVideo = () => {
     const mainVideoWrp = document.querySelector("[data-name='video']"),
     video = document.querySelector("[data-name='video-box']"),
-    close = document.querySelector("[data-name='video-close]");
+    close = document.querySelector("[data-name='video-close']");
     video.addEventListener("click", ()=>{
         mainVideoWrp.classList.add("js-active");
         close.addEventListener("click", ()=>{
