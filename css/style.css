@@ -1,6 +1,19 @@
 html{
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+  }
 body{
     font-family: 'Lato', sans-serif;
     font-weight: 500;
@@ -521,6 +534,18 @@ body{
     line-height: 133%;
     text-transform: uppercase;
     color: #161616;
+}
+.popup-feedback{
+    scrollbar-color: var(--main-color) var(--main-color-text-second);
+}
+.popup-feedback::-webkit-scrollbar-track{
+    width: 0.4rem;
+    border-radius: 0.25rem;
+}
+.popup-feedback::-webkit-scrollbar-thumb{
+    width: 0.4rem;
+    border-radius: 0.25rem;
+    background-color: var(--main-color);
 }
 @media(max-width: 1680px) {
     .features__list{
